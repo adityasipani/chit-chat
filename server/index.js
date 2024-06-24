@@ -3,6 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
+const path = require("path")
 const app = express();
 const socket = require("socket.io");
 require("dotenv").config();
@@ -22,9 +23,11 @@ mongoose
     console.log(err.message);
   });
 
-app.get("/ping", (_req, res) => {
-  return res.json({ msg: "Ping Successful" });
-});
+  app.use(express.static(path.join(__dirname, '../client/build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
