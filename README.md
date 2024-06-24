@@ -21,7 +21,7 @@ cd chat-app-react-nodejs
 ```
 Now rename env files from .env.example to .env
 ```shell
-cd public
+cd client
 mv .env.example .env
 cd ..
 cd server
@@ -34,14 +34,14 @@ Now install the dependencies
 cd server
 yarn
 cd ..
-cd public
+cd client
 yarn
 ```
 We are almost done, Now just start the development server.
 
 For Frontend.
 ```shell
-cd public
+cd client
 yarn start
 ```
 For Backend.
@@ -52,16 +52,5 @@ cd server
 yarn start
 ```
 Done! Now open localhost:3000 in your browser.
-
-#### Second Method
-- This method requires docker and docker-compose to be installed in your system.
-- Make sure you are in the root of your project and run the following command.
-
-```shell
-docker compose build --no-cache
-```
-after the build is complete run the containers using the following command
-```shell
-docker compose up
 ```
 now open localhost:3000 in your browser.
