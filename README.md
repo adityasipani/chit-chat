@@ -1,9 +1,9 @@
 # Chit-Chat - Chat Application 
-Snappy is chat application build with the power of MERN Stack.
+Chit-Chat is chat application build with the power of MERN Stack.
 
-![login page](./images/snappy_login.png)
 
-![home page](./images/snappy.png)
+
+![home page](./images/chit-chat.png)
 
 ## Installation Guide
 
