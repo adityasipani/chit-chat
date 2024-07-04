@@ -4,7 +4,7 @@ Chit-Chat is chat application build with the power of MERN Stack.
 
 
 ![home page](./images/chit-chat.png)
-![home page](./images/capture.png)
+![chat interface](./images/chatsection.png)
 
 ## Installation Guide
 
